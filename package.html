@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Touria - Tour & Travel Booking HTML Template">
+
+   <!-- Title & Favicon -->
+   <title>Gallery | Touria - Tour & Travel Booking HTML Template</title>
+   <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/nice-select2.css">
+   <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+   <link rel="stylesheet" href="assets/css/venobox.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Preloader -->
+   <div class="preloader" id="preloader">
+      <div class="spinner-grow" role="status">
+         <span class="visually-hidden">Loading...</span>
+      </div>
+   </div>
+
+   <!-- Right Side Offcanvas -->
+   <div class="offcanvas offcanvas-end right-side-touria-offcanvas shadow-lg" tabindex="-1" id="sideMenuOffcanvas">
+      <!-- Offcanvas Header -->
+      <div class="offcanvas-header">
+         <div>
+            <img src="assets/img/logo/dc-group-trf.png" width="70px" alt="">
+         </div>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas Body -->
+      <div class="offcanvas-body">
+         <div class="container-fluid">
+            <div class="d-flex flex-column gap-5 mb-5">
+               <!-- Single Item -->
+               <div class="about-card-sm d-flex align-items-center gap-3">
+                  <div class="icon text-success">
+                     <i class="ti ti-shield-half"></i>
+                  </div>
+                  <div>
+                     <h4>Safety First Always</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm d-flex align-items-center gap-3">
+                  <div class="icon text-success">
+                     <i class="ti ti-world-star"></i>
+                  </div>
+                  <div>
+                     <h4>Experience the World</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm d-flex align-items-center gap-3">
+                  <div class="icon text-success">
+                     <i class="ti ti-capture"></i>
+                  </div>
+                  <div>
+                     <h4>Excellence in Service</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <!-- Single Item -->
+               <div class="about-card-sm d-flex align-items-center gap-3">
+                  <div class="icon text-success">
+                     <i class="ti ti-user"></i>
+                  </div>
+                  <div>
+                     <h4>Friendly Guider</h4>
+                     <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                  </div>
+               </div>
+
+               <a href="contact.html" class="btn btn-success">View More <i class="icon-arrow-right"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Search Form Overlay -->
+   <div class="search-bg-overlay" id="searchOverlay"></div>
+
+   <!-- Search Form Popup -->
+   <div class="search-form-popup">
+      <h2 class="mb-5 display-6 fw-bold text-white">How can I help you, Today?</h2>
+      <button type="button" class="close-btn" id="searchClose" aria-label="Close">
+         <i class="ti ti-x"></i>
+      </button>
+      <form class="search-form">
+         <input type="search" class="form-control" placeholder="Search...">
+         <button type="submit" class="btn btn-success d-none"><i class="ti ti-search"></i></button>
+      </form>
+   </div>
+
+   <!-- Header Area-->
+   <header class="header-area style-three">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/img/logo/dc-group-trf.png" width="70px" alt="">
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#touriaNav"
+               aria-controls="touriaNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="ti ti-menu-deep"></i>
+            </button>
+
+            <!-- Navbar Nav -->
+            <div class="collapse justify-content-xl-end navbar-collapse" id="touriaNav">
+               <ul class="navbar-nav align-items-xl-center navbar-nav-scroll">
+                  <li class="touria-dd">
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="about-us.html">About Us </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="group-companies.html">Group Companies </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="destinations.html">Destinations </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="package.html">Package  </a>
+                  </li>
+                        <li class="touria-dd">
+                     <a href="gallery.html">Gallery </a>
+                  </li>
+               </ul>
+
+               <!-- Header Navigation -->
+               <div class="header-navigation d-flex flex-wrap align-items-center gap-3 mt-4 mt-xl-0">
+                 
+                 
+
+                  <!-- Get A Quote -->
+                 <a class="btn btn-success" href="contact.html">Contact Us <i class="icon-arrow-right"></i></a>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <!-- Breadcrumb Section -->
+   <div class="breadcrumb-section bg-img jarallax" data-jarallax data-speed="0.6"
+      style="background-image: url('assets/img/bg-img/97.jpg');">
+      <div class="container">
+         <!-- Breadcrumb Content -->
+         <div class="breadcrumb-content">
+            <div class="divider"></div>
+            <h2>Package</h2>
+            <ul class="list-unstyled">
+               <li><a href="index.html">Home</a></li>
+               <li>Package</li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </div>
+
+   
+   <!-- Trip Section -->
+   <section class="trip-section">
+      <!-- Trolley -->
+      <div class="trolley-img">
+         <img src="assets/img/core-img/trolley.svg" alt="">
+      </div>
+
+      <!-- Plane -->
+      <div class="plane-img">
+         <img src="assets/img/core-img/plane.svg" alt="">
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+               <!-- Section Heading -->
+               <div class="section-heading text-center">
+                  <span class="sub-title text-success">Explore The World</span>
+                  <h2 class="mb-0">Awesome Trip with us</h2>
+               </div>
+            </div>
+         </div>
+
+         <div class="divider-sm"></div>
+
+         <div class="row g-4">
+            <!-- Trip Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="trip-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/packages/kerala.jpg" alt="">
+                  <!-- Trip Body -->
+                  <div class="trip-body">
+                     <h4 class="mb-4 trip-title">Discover God’s Own Country – Kerala Awaits You <span class="fs-13 text-black-50">Kerala Package </span></h4>
+                     <!-- Trip Meta -->
+                     <div class="trip-meta d-flex align-items-center justify-content-between gap-3 gap-xxl-4">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                           <li><i class="ti ti-map-pin-filled"></i> Munnar, Thekkady, Alleppey, Kovalam, Trivandrum</li>
+                           <li><i class="ti ti-clock"></i> 7 Days - 6 Nights</li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="text-end">
+                           <span class="badge bg-success mb-2">Special Offer</span>
+                           <h2 class="mb-0 trip-price">₹42,000<span>Per Person</span></h2>
+                        </div>
+                     </div>
+                     <ul lass="list-unstyled d-flex flex-column gap-3 ">
+                        <li><i class="ti ti-plane"></i> Flights: Indigo (AMD–COK, TRV–BLR–AMD)</li>
+                        <li class="mb-3"><i class="ti ti-user "></i> 6 Adults (3 Rooms)</li>
+                     </ul>
+                     <!-- Button -->
+                     <a href="Kerala-package-deatil.html" class="btn btn-light w-100">View More</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Trip Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                  <div class="trip-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <img src="assets/img/packages/Manali.jpg" alt="Manali Shimla Package">
+                     <!-- Trip Body -->
+                     <div class="trip-body">
+                        <h4 class="mb-4 trip-title">Escape to the Hills – Manali & Shimla <span class="fs-13 text-black-50">Manali – Shimla Package</span></h4>
+                        <!-- Trip Meta -->
+                        <div class="trip-meta d-flex align-items-center justify-content-between gap-3 gap-xxl-4">
+                           <ul class="list-unstyled d-flex flex-column gap-3">
+                              <li><i class="ti ti-map-pin-filled"></i> Manali & Shimla</li>
+                              <li><i class="ti ti-clock"></i> 7 Days - 6 Nights (21 Oct – 27 Oct)</li>
+                           </ul>
+                           <div class="line"></div>
+                           <div class="text-end">
+                              <span class="badge bg-success mb-2">Best Seller</span>
+                              <h2 class="mb-0 trip-price">₹28,500<span>Total</span></h2>
+                           </div>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                           <li><i class="ti ti-car"></i> Sedan vehicle Delhi → Manali → Shimla → Delhi</li>
+                           <li class="mb-3"><i class="ti ti-user"></i> 3 Adults (1 Room + Extra Bed)</li>
+                        </ul>
+                        <!-- Button -->
+                        <a href="manali-package-details.html" class="btn btn-light w-100">View More</a>
+                     </div>
+                  </div>
+            </div>
+
+            <!-- Trip Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="trip-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/packages/Malaysia.jpg" alt="Malaysia Package">
+                  <!-- Trip Body -->
+                  <div class="trip-body">
+                     <h4 class="mb-4 trip-title">Explore Kuala Lumpur & Langkawi <span class="fs-13 text-black-50">Malaysia Package</span></h4>
+                     <!-- Trip Meta -->
+                     <div class="trip-meta d-flex align-items-center justify-content-between gap-3 gap-xxl-4">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                           <li><i class="ti ti-map-pin-filled"></i> Kuala Lumpur & Langkawi</li>
+                           <li><i class="ti ti-clock"></i> 6 Days - 5 Nights (08 July – 13 July)</li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="text-end">
+                           <span class="badge bg-success mb-2">With Flights</span>
+                           <h2 class="mb-0 trip-price">₹64,000<span>Per Person</span></h2>
+                        </div>
+                     </div>
+                     <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><i class="ti ti-plane"></i> Flights: Air Asia (AMD–KUL, KUL–LGK, LGK–KUL–AMD)</li>
+                        <li class="mb-3"><i class="ti ti-user"></i> 3 Adults (1 Room)</li>
+                     </ul>
+                     <!-- Button -->
+                     <a href="malaysia-package-details.html" class="btn btn-light w-100">View More</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4"> 
+               <div class="trip-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                  <img src="assets/img/packages/Singapore.avif" alt="Singapore Package">
+                  <!-- Trip Body -->
+                  <div class="trip-body">
+                     <h4 class="mb-4 trip-title">Discover the Magic of Singapore <span class="fs-13 text-black-50">Singapore Package</span></h4>
+                     <!-- Trip Meta -->
+                     <div class="trip-meta d-flex align-items-center justify-content-between gap-3 gap-xxl-4">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                           <li><i class="ti ti-map-pin-filled"></i> Singapore</li>
+                           <li><i class="ti ti-clock"></i> 5 Days - 4 Nights (16 Aug – 20 Aug)</li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="text-end">
+                           <span class="badge bg-info mb-2">Family Special</span>
+                           <h2 class="mb-0 trip-price">₹98,000<span>Per Adult</span></h2>
+                        </div>
+                     </div>
+                     <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><i class="ti ti-plane"></i> Flights: Air India (DEL–SIN), Indigo (SIN–DEL)</li>
+                        <li><i class="ti ti-user"></i> 4 Adults + 1 Child (2 Rooms)</li>
+                        <li><i class="ti ti-currency-rupee"></i> Child (No Bed): ₹64,500</li>
+                     </ul>
+                     <!-- Button -->
+                     <a href="Singapore-package-details.html" class="btn btn-light w-100">View More</a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </section>
+   
+   <section class="destination-section-4 section-padding bg-gray">
+      <div class="shape1">
+         <img src="assets/img/core-img/01.png" alt="">
+      </div>
+      <div class="shape2">
+         <img src="assets/img/core-img/02.png" alt="">
+      </div>
+      <div class="destination-shape-1">
+         <img src="assets/img/core-img/destination-shape-1.png" alt="">
+      </div>
+       <div class="destination-shape-2">
+         <img src="assets/img/core-img/destination-shape-2.png" alt="">
+      </div>
+      
+            <div class="section-heading text-center">
+                  <span class="sub-title text-success">Explore The World</span>
+                  <h2>Awesome Tips with us</h2>
+            </div>
+            <ul class="nav" role="tablist">
+               <li class="nav-item wow fadeInUp" data-wow-delay=".2s" role="presentation" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <a href="#All" data-bs-toggle="tab" class="nav-link active" aria-selected="true" role="tab">
+                    All
+                  </a>
+               </li>
+               <li class="nav-item wow fadeInUp" data-wow-delay=".4s" role="presentation" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                  <a href="#Thailand" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
+                    Thailand
+                  </a>
+               </li>
+               <li class="nav-item wow fadeInUp" data-wow-delay=".6s" role="presentation" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                  <a href="#Manhattan" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
+                    Manhattan
+                  </a>
+               </li>
+               <li class="nav-item wow fadeInUp" data-wow-delay=".8s" role="presentation" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                  <a href="#Pearland" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
+                     Pearland
+                  </a>
+               </li>
+               <li class="nav-item wow fadeInUp" data-wow-delay=".8s" role="presentation" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                  <a href="#Maldives" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
+                     Maldives
+                  </a>
+               </li>
+         </ul>
+           <div class="tab-content">
+               <div id="All" class="tab-pane fade active show" role="tabpanel">
+                 <div class="swiper desti-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                     <div class="swiper-wrapper" id="swiper-wrapper-110624779baede263" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-367.5px, 0px, 0px); transition-delay: 0ms;">
+                     
+                     
+                     
+                     
+                     
+                     <div class="swiper-slide swiper-slide-prev" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 337.5px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                               <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                             
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 337.5px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-01.jpg" alt="">
+                               <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">Adventures in Japan</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 337.5px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-02.jpg" alt="">
+                              <span class="top-items">15% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">New York, USA</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 337.5px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-03.jpg" alt="">
+                                <span class="top-items">12% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">London, UK</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 337.5px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                               <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                             
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+           
+               </div>
+               <div id="Thailand" class="tab-pane fade" role="tabpanel">
+                  <div class="swiper desti-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                     <div class="swiper-wrapper" id="swiper-wrapper-dbab75e76b8b3542" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-387.75px, 0px, 0px);">
+                     
+                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-02.jpg" alt="">
+                              <span class="top-items">15% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">New York, USA</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-03.jpg" alt="">
+                              <span class="top-items">12% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">London, UK</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-01.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">Adventures in Japan</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+               </div>
+               <div id="Manhattan" class="tab-pane fade" role="tabpanel">
+                  <div class="swiper desti-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                     <div class="swiper-wrapper" id="swiper-wrapper-47ac8bd14c2a4f108" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-387.75px, 0px, 0px);">
+                     
+                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-02.jpg" alt="">
+                              <span class="top-items">15% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">New York, USA</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-03.jpg" alt="">
+                              <span class="top-items">12% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">London, UK</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-01.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">Adventures in Japan</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+               </div>
+               <div id="Pearland" class="tab-pane fade" role="tabpanel">
+                  <div class="swiper desti-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                     <div class="swiper-wrapper" id="swiper-wrapper-623dafa335f51151" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-387.75px, 0px, 0px);">
+                     
+                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-02.jpg" alt="">
+                              <span class="top-items">15% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">New York, USA</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-03.jpg" alt="">
+                              <span class="top-items">12% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">London, UK</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-01.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">Adventures in Japan</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+               </div>
+               <div id="Maldives" class="tab-pane fade" role="tabpanel">
+                  <div class="swiper desti-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                     <div class="swiper-wrapper" id="swiper-wrapper-b285e10c5c7210a16a" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-387.75px, 0px, 0px);">
+                     
+                     
+                     
+                     
+                     
+                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-04.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                           
+                              <h3><a href="destination-details.html">Paris, France</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-01.jpg" alt="">
+                              <span class="top-items">10% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">Adventures in Japan</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-02.jpg" alt="">
+                              <span class="top-items">15% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">New York, USA</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div><div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 357.75px; margin-right: 30px;">
+                        <div class="destination-box-items">
+                           <div class="destination-image">
+                              <img src="assets/img/core-img/destination-03.jpg" alt="">
+                              <span class="top-items">12% off</span>
+                           </div>
+                           <div class="destination-content">
+                              <h3><a href="destination-details.html">London, UK</a></h3>
+                              <ul>
+                                 <li>
+                                    From <span>₹ 180.00 INR</span>
+                                 </li>
+                                 <li>
+                                    <del>₹204.00 INR</del>
+                                 </li>
+                              </ul>
+                              <div class="destination-rattiing">
+                                 <div class="first-items">
+                                    <div class="star">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M15.9459 5.98709C15.8161 5.57003 15.472 5.26683 15.0574 5.20354L10.8571 4.5639L8.98018 0.589387C8.60855 -0.196462 7.38029 -0.196462 7.00866 0.589387L5.13177 4.5639L0.941425 5.20354C0.527957 5.26683 0.183822 5.57109 0.0540971 5.98833C-0.0756282 6.40432 0.032167 6.86187 0.332273 7.16825L3.37146 10.2728L2.65451 14.6528C2.58416 15.0849 2.75353 15.5228 3.0921 15.781C3.43185 16.0378 3.88158 16.0714 4.25102 15.8674L7.994 13.7989L11.7479 15.8674C11.9085 15.9562 12.0845 16 12.2592 16C12.4868 16 12.7144 15.925 12.9069 15.7811C13.2456 15.5218 13.4148 15.0851 13.3444 14.653L12.6287 10.2729L15.6679 7.16843C15.968 6.86293 16.0756 6.40432 15.9459 5.98709Z" fill="#FFB700"></path>
+                                       </svg>
+                                    </div>
+                                    <p>5.00 (333)</p>
+                                 </div>
+                                 <p>10 Nights-11 Days</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+               </div>
+            </div>
+               
+            <div class="btn-button1 text-center pt-5 pb-5">
+               <a href="package.html" class="btn btn-success">Check All Packages <i class="icon-arrow-right"></i></a>
+            </div>
+   </section>
+   
+   <!-- Footer -->
+   <footer class="footer-wrapper jarallax" data-jarallax data-speed="0.6"
+      style="background-image: url('assets/img/bg-img/35.jpg');">
+      <!-- Plane Image -->
+      <img class="plane-img" src="assets/img/core-img/plane2.png" alt="">
+
+      <!-- Tree Image -->
+      <img class="tree-img" src="assets/img/core-img/tree.png" alt="">
+
+ 
+
+      <div class="container">
+         <div class="border-top"></div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="footer-card pe-lg-5">
+                  <a href="#" class="footer-logo">
+                    <img src="assets/img/logo/dc-group.png" width="100px" alt="">
+                  </a>
+                  <p class="mb-0 text-white">Travolo Holidays – Trusted travel partner for memorable journeys in India and abroad.</p>
+
+                  <!-- Social Nav -->
+                  <div class="social-nav">
+                     <a href="#">
+                        <i class="ti ti-brand-facebook"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-x"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-linkedin"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-instagram"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Quick Links</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about-us.html">About Us</a></li>
+                     <li><a href="group-companies.html">Group Companies</a></li>
+                     <li><a href="destinations.html">Destinations</a></li>
+                     <li><a href="package.html">Package</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                 <h5 class="mb-5 card-title text-white">Follow Us</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav list-unstyled">
+                     <li class="d-flex align-items-center gap-2 mb-3">
+                        <i class="ti ti-phone text-success"></i>
+                        <span>+91 98765 43210</span>
+                     </li>
+                     <li class="d-flex align-items-center gap-2 mb-3">
+                        <i class="ti ti-mail text-success"></i>
+                        <span>info@travoloholidays.com</span>
+                     </li>
+                     <li class="d-flex align-items-start gap-2">
+                        <i class="ti ti-map-pin text-success"></i>
+                        <span>Travolo Holidays, 2nd Floor, ABC Complex,  
+                        Near City Center Mall, Ahmedabad – 380001</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Gallery Post</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="gallery-post list-unstyled">
+                     <li><a href="#"><img src="assets/img/bg-img/36.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/37.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/38.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/39.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/40.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/41.jpg" alt=""></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="border-top"></div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright-wrapper">
+         <div class="container">
+            <div class="row align-items-center">
+               <!-- Copyright -->
+               <div class="col-12 col-md-6">
+                  <p class="mb-3 mb-md-0 copyright">Copyright © <span id="year"></span> <a href="#">Nano Theme</a>
+                     All rights reserved.</p>
+               </div>
+
+               <!-- Footer Bottom Nav -->
+               <div class="col-12 col-md-6">
+                  <div class="footer-bottom-nav">
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Terms of Service</a>
+                     <a href="#">Legal Agreement</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scroll To Top -->
+   <button id="scrollTopButton" class="touria-scrolltop scrolltop-hide">
+      <i class="icon-arrow-up"></i>
+   </button>
+
+   <!-- All JavaScript Files-->
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/slideToggle.min.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/jarallax.min.js"></script>
+   <script src="assets/js/index.js"></script>
+   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="assets/js/flatpickr.min.js"></script>
+   <script src="assets/js/nice-select2.js"></script>
+   <script src="assets/js/venobox.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/active.js"></script>
+</body>
+
+</html>

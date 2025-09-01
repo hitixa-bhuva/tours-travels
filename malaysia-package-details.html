@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Touria - Tour & Travel Booking HTML Template">
+
+   <!-- Title & Favicon -->
+   <title>Destination Details | Touria - Tour & Travel Booking HTML Template</title>
+   <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/nice-select2.css">
+   <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+   <link rel="stylesheet" href="assets/css/venobox.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Preloader -->
+   <div class="preloader" id="preloader">
+      <div class="spinner-grow" role="status">
+         <span class="visually-hidden">Loading...</span>
+      </div>
+   </div>
+
+   <!-- Right Side Offcanvas -->
+   <div class="offcanvas offcanvas-end right-side-touria-offcanvas shadow-lg" tabindex="-1" id="sideMenuOffcanvas">
+      <!-- Offcanvas Header -->
+      <div class="offcanvas-header">
+         <div>
+            <img src="assets/img/logo/dc-group-trf.png" width="70px" alt="">
+         </div>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas Body -->
+      <div class="offcanvas-body">
+         <div class="container-fluid">
+            <div class="d-flex flex-column gap-5 mb-5">
+   <!-- Kerala Package -->
+   <div class="about-card-sm d-flex align-items-center gap-3">
+      <div class="icon text-success">
+         <i class="ti ti-plane"></i>
+      </div>
+      <div>
+         <h4>Kerala Package (with Flights)</h4>
+         <p class="mb-0">Explore Munnar tea gardens, Alleppey backwaters, Kovalam Beach & Trivandrum – the true beauty of God’s Own Country.</p>
+      </div>
+   </div>
+
+   <!-- Manali – Shimla Package -->
+   <div class="about-card-sm d-flex align-items-center gap-3">
+      <div class="icon text-success">
+         <i class="ti ti-mountain"></i>
+      </div>
+      <div>
+         <h4>Manali – Shimla Package</h4>
+         <p class="mb-0">Enjoy snowy adventures at Solang Valley & Rohtang Pass, with peaceful evenings in Shimla’s Mall Road.</p>
+      </div>
+   </div>
+
+   <!-- Malaysia Package -->
+   <div class="about-card-sm d-flex align-items-center gap-3">
+      <div class="icon text-success">
+         <i class="ti ti-building-skyscraper"></i>
+      </div>
+      <div>
+         <h4>Malaysia Package (with Flights)</h4>
+         <p class="mb-0">Discover Kuala Lumpur’s Petronas Towers, Batu Caves, and relax in Langkawi’s beaches & Skybridge.</p>
+      </div>
+   </div>
+
+   <!-- Singapore Package -->
+   <div class="about-card-sm d-flex align-items-center gap-3">
+      <div class="icon text-success">
+         <i class="ti ti-building"></i>
+      </div>
+      <div>
+         <h4>Singapore Package</h4>
+         <p class="mb-0">From Universal Studios to Gardens by the Bay and Marina Bay Sands – Singapore offers fun for all ages.</p>
+      </div>
+   </div>
+
+   <!-- Button -->
+   <a href="contact.html" class="btn btn-success">Book Now <i class="icon-arrow-right"></i></a>
+</div>
+
+         </div>
+      </div>
+   </div>
+
+   <!-- Search Form Overlay -->
+   <div class="search-bg-overlay" id="searchOverlay"></div>
+
+   <!-- Search Form Popup -->
+   <div class="search-form-popup">
+      <h2 class="mb-5 display-6 fw-bold text-white">How can I help you, Today?</h2>
+      <button type="button" class="close-btn" id="searchClose" aria-label="Close">
+         <i class="ti ti-x"></i>
+      </button>
+      <form class="search-form">
+         <input type="search" class="form-control" placeholder="Search...">
+         <button type="submit" class="btn btn-success d-none"><i class="ti ti-search"></i></button>
+      </form>
+   </div>
+
+   <!-- Header Area-->
+   <header class="header-area style-three">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/img/logo/dc-group-trf.png" width="70px" alt="">
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#touriaNav"
+               aria-controls="touriaNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="ti ti-menu-deep"></i>
+            </button>
+
+            <!-- Navbar Nav -->
+            <div class="collapse justify-content-xl-end navbar-collapse" id="touriaNav">
+               <ul class="navbar-nav align-items-xl-center navbar-nav-scroll">
+                  <li class="touria-dd">
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="about-us.html">About Us </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="group-companies.html">Group Companies </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="destinations.html">Destinations </a>
+                  </li>
+                  <li class="touria-dd">
+                     <a href="package.html">Package  </a>
+                  </li>
+                        <li class="touria-dd">
+                     <a href="gallery.html">Gallery </a>
+                  </li>
+               </ul>
+
+               <!-- Header Navigation -->
+               <div class="header-navigation d-flex flex-wrap align-items-center gap-3 mt-4 mt-xl-0">
+                 
+                 
+
+                  <!-- Get A Quote -->
+                 <a class="btn btn-success" href="contact.html">Contact Us <i class="icon-arrow-right"></i></a>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <!-- Breadcrumb Section -->
+   <div class="breadcrumb-section bg-img jarallax" data-jarallax data-speed="0.6"
+      style="background-image: url('assets/img/bg-img/97.jpg');">
+      <div class="container">
+         <!-- Breadcrumb Content -->
+         <div class="breadcrumb-content">
+            <div class="divider"></div>
+            <h2>Malaysia – Truly Asia</h2>
+            <ul class="list-unstyled">
+               <li><a href="index.html">Home</a></li>
+               <li>Package</li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </div>
+
+   <!-- Destination Details Section -->
+   <div class="destination-details-section">
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <!-- Destination Details Slider -->
+         <div class="swiper destination-details-wrapper mb-5">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <img src="assets/img/packages-details/Malaysia/Malaysia-bri.jpg" alt="">
+               </div>
+               <div class="swiper-slide">
+                  <img src="assets/img/packages-details/Malaysia/realistic-image-rooftop-fireworks-urban-setting-capturing-vibrant-explosions-against_1161356-253096.jpg" alt="">
+               </div>
+               <div class="swiper-slide">
+                  <img src="assets/img/packages-details/Malaysia/night-market-food-stalls-illuminated-by-colorful-lanterns_285145-24653.jpg" alt="">
+               </div>
+               <div class="swiper-slide">
+                  <img src="assets/img/packages-details/Malaysia/Malaysia-tample.jpg" alt="">
+               </div>
+               
+            </div>
+
+            <!-- Destination Details Button -->
+            <button class="destination-details-button-prev">
+               <i class="icon-arrow-left"></i>
+            </button>
+            <button class="destination-details-button-next">
+               <i class="icon-arrow-right"></i>
+            </button>
+         </div>
+
+        <div class="row g-5">
+  <div class="col-12 col-lg-8">
+    <!-- Destination Details Content -->
+    <div class="destination-details-content">
+      <h2>Overview</h2>
+      <p class="mb-0">
+        Embark on an unforgettable 6 Days / 5 Nights journey through the beautiful destinations of **Kuala Lumpur** and **Langkawi**. 
+        Experience the vibrant city life, iconic landmarks, pristine beaches, and thrilling adventures in this Malaysia package.
+      </p>
+
+      <h2>Top Destinations</h2>
+      <p class="mb-0">
+        Explore the bustling city of **Kuala Lumpur**, including the majestic **Petronas Twin Towers**, and the stunning beaches and attractions in **Langkawi**,
+        including the **Langkawi Skybridge** and **Eagle Square**.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="assets/img/packages-details/Malaysia/Malaysia-brige.jpg" alt="Kuala Lumpur">
+        </div>
+        <div class="col-12 col-lg-6">
+          <img src="assets/img/packages-details/Malaysia/Malaysia-random.jpg" alt="Langkawi">
+        </div>
+      </div>
+
+      <p>
+        From the iconic **Petronas Towers** to the tropical beauty of **Langkawi Island**, this Malaysia tour covers the best of both worlds. Enjoy breathtaking views, 
+        cultural landmarks, and exciting experiences that Malaysia has to offer.
+      </p>
+    </div>
+
+    <h2 class="mb-4 mt-5 faq-title">Frequently Asked Questions</h2>
+
+    <!-- FAQ Accordion -->
+    <div class="faq-accordion style-three">
+      <div class="accordion gap-4" id="faqAccordion">
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqQuestion1" aria-expanded="true" aria-controls="faqQuestion1">
+              What is included in the Malaysia package?
+            </button>
+          </div>
+          <div id="faqQuestion1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>
+                The Malaysia package includes accommodation in 3-star hotels, daily breakfast, guided tours, flights, and transportation within Malaysia.
+                The package also covers entry to attractions like the **Petronas Towers**, **Langkawi Skybridge**, and other key sights.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqQuestion2" aria-expanded="false" aria-controls="faqQuestion2">
+              Can I customize my Malaysia itinerary?
+            </button>
+          </div>
+          <div id="faqQuestion2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>
+                Yes, you can customize the itinerary to include more or fewer activities. Our travel experts will help you design the best trip based on your preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqQuestion3" aria-expanded="false" aria-controls="faqQuestion3">
+              Are flights included in the Malaysia package?
+            </button>
+          </div>
+          <div id="faqQuestion3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>
+                Yes, flights from **Ahmedabad (AMD) to Kuala Lumpur (KUL)** and from **Langkawi (LGK) to Ahmedabad (AMD)** are included in the package.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqQuestion4" aria-expanded="false" aria-controls="faqQuestion4">
+              What are the key attractions in this package?
+            </button>
+          </div>
+          <div id="faqQuestion4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>
+                Key attractions include **Petronas Twin Towers**, **Langkawi Skybridge**, **Batu Caves**, **Genting Highlands**, and various cultural sites across Kuala Lumpur and Langkawi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <div class="d-flex flex-column gap-5">
+      <!-- Widget -->
+      <div class="blog-widget">
+        <div class="h4 fw-bold text-success mb-4">Package Information</div>
+
+        <!-- Destination Info List -->
+        <ul class="destination-info-list list-unstyled">
+          <li><span>Destination:</span> <span>Kuala Lumpur & Langkawi</span></li>
+          <li><span>Duration:</span> <span>6 Days / 5 Nights</span></li>
+          <li><span>Guests:</span> <span>3 Adults (1 Room)</span></li>
+          <li><span>Price:</span> <span>₹64,000 Per Person</span></li>
+          <li><span>Flights:</span> <span>Air Asia (AMD–KUL, KUL–LGK, LGK–KUL–AMD)</span></li>
+        </ul>
+      </div>
+
+      <!-- Widget -->
+      <div class="map-widget">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988656217!2d101.6869!3d3.139003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d32a9bdaea6a95%3A0xa5c8d6e1a55cc51a!2sKuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1746429272896!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="footer-wrapper jarallax" data-jarallax data-speed="0.6"
+      style="background-image: url('assets/img/bg-img/35.jpg');">
+      <!-- Plane Image -->
+      <img class="plane-img" src="assets/img/core-img/plane2.png" alt="">
+
+      <!-- Tree Image -->
+      <img class="tree-img" src="assets/img/core-img/tree.png" alt="">
+
+ 
+
+      <div class="container">
+         <div class="border-top"></div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="footer-card pe-lg-5">
+                  <a href="#" class="footer-logo">
+                    <img src="assets/img/logo/dc-group.png" width="100px" alt="">
+                  </a>
+                  <p class="mb-0 text-white">Travolo Holidays – Trusted travel partner for memorable journeys in India and abroad.</p>
+
+                  <!-- Social Nav -->
+                  <div class="social-nav">
+                     <a href="#">
+                        <i class="ti ti-brand-facebook"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-x"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-linkedin"></i>
+                     </a>
+                     <a href="#">
+                        <i class="ti ti-brand-instagram"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Quick Links</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about-us.html">About Us</a></li>
+                     <li><a href="group-companies.html">Group Companies</a></li>
+                     <li><a href="destinations.html">Destinations</a></li>
+                     <li><a href="package.html">Package</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                 <h5 class="mb-5 card-title text-white">Follow Us</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="footer-nav list-unstyled">
+                     <li class="d-flex align-items-center gap-2 mb-3">
+                        <i class="ti ti-phone text-success"></i>
+                        <span>+91 98765 43210</span>
+                     </li>
+                     <li class="d-flex align-items-center gap-2 mb-3">
+                        <i class="ti ti-mail text-success"></i>
+                        <span>info@travoloholidays.com</span>
+                     </li>
+                     <li class="d-flex align-items-start gap-2">
+                        <i class="ti ti-map-pin text-success"></i>
+                        <span>Travolo Holidays, 2nd Floor, ABC Complex,  
+                        Near City Center Mall, Ahmedabad – 380001</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- Footer Card -->
+            <div class="col-12 col-sm-6 col-lg">
+               <div class="footer-card">
+                  <h5 class="mb-5 card-title text-white">Gallery Post</h5>
+
+                  <!-- Footer Nav -->
+                  <ul class="gallery-post list-unstyled">
+                     <li><a href="#"><img src="assets/img/bg-img/36.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/37.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/38.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/39.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/40.jpg" alt=""></a></li>
+                     <li><a href="#"><img src="assets/img/bg-img/41.jpg" alt=""></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <div class="container">
+         <div class="border-top"></div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright-wrapper">
+         <div class="container">
+            <div class="row align-items-center">
+               <!-- Copyright -->
+               <div class="col-12 col-md-6">
+                  <p class="mb-3 mb-md-0 copyright">Copyright © <span id="year"></span> <a href="#">Nano Theme</a>
+                     All rights reserved.</p>
+               </div>
+
+               <!-- Footer Bottom Nav -->
+               <div class="col-12 col-md-6">
+                  <div class="footer-bottom-nav">
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Terms of Service</a>
+                     <a href="#">Legal Agreement</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scroll To Top -->
+   <button id="scrollTopButton" class="touria-scrolltop scrolltop-hide">
+      <i class="icon-arrow-up"></i>
+   </button>
+
+   <!-- All JavaScript Files-->
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/slideToggle.min.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/jarallax.min.js"></script>
+   <script src="assets/js/index.js"></script>
+   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="assets/js/flatpickr.min.js"></script>
+   <script src="assets/js/nice-select2.js"></script>
+   <script src="assets/js/venobox.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/active.js"></script>
+</body>
+
+</html>
